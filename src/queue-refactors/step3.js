@@ -1,0 +1,38 @@
+function Queue() {};
+
+Queue.prototype.add = function(item) {
+  this.storage[this.tail] = item;
+  this.tail++;
+};
+
+Queue.prototype.remove = function() {
+  temp = undefined;
+  if(this.tail - this.head > 0) {
+    temp = this.storage[this.head];
+    delete this.storage[this.head];
+    this.head++;
+  }
+  return temp;
+};
+
+Queue.prototype.toString = function() {
+  var output = '[';
+  for(var i=this.head; i<this.tail; i++) {
+    output += this.storage[i];
+    if(i<this.tail-1) output += ',';
+  }
+  output += ']';
+  return output;
+};
+
+Queue.prototype.size = function() {
+  return this.head - this.minus;
+};
+
+var makeQueue = function() {
+  var queue = Object.create(Queue.prototype);
+  queue.storage = {};
+  queue.tail = 0;
+  queue.head = 0;
+  return queue;
+};
