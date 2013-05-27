@@ -3,7 +3,7 @@ data-structures
 
 This is where I practice traditional data structures and keep my jasmine up to date. Commit history has been lost due to technical reasons.
 
-For those following at home, the follow structures may be found in this repo.
+For those following at home, the follow structures may be found in this repo. 
 
 * Binary Search Tree
 * Hash Table
@@ -14,3 +14,5 @@ For those following at home, the follow structures may be found in this repo.
 * Queue
 * Stack
 * Linked List
+
+#_Nothing in this repo is production quality!_
